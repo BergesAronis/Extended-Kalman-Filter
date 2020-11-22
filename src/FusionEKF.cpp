@@ -38,8 +38,8 @@ FusionEKF::FusionEKF() {
   H_laser_ << 1, 0, 0, 0,
               0, 1, 0, 0;
 
-  ekf.F_ = MatrixXd(4, 4);
-  ekf.F_ <<    1, 0, 0.5, 0,
+  ekf_.F_ = MatrixXd(4, 4);
+  ekf_.F_ <<    1, 0, 0.5, 0,
           0, 1, 0, 0.5,
           0, 0, 1, 0,
           0, 0, 0, 1;
